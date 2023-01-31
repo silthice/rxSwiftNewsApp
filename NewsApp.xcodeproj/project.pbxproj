@@ -13,6 +13,9 @@
 		80CE15E22989057500893A2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80CE15E12989057500893A2C /* Assets.xcassets */; };
 		80CE15E52989057500893A2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80CE15E32989057500893A2C /* LaunchScreen.storyboard */; };
 		80CE15ED298906C200893A2C /* NewsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CE15EC298906C200893A2C /* NewsTableViewController.swift */; };
+		80CE15F029890CD500893A2C /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CE15EF29890CD500893A2C /* Article.swift */; };
+		80CE15F329890E8300893A2C /* ArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CE15F229890E8300893A2C /* ArticleTableViewCell.swift */; };
+		80CE15F6298914A500893A2C /* URLRequest+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CE15F5298914A500893A2C /* URLRequest+Extensions.swift */; };
 		D7EAF194BDED6E5133857CD2 /* Pods_NewsApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA2D03AF815BBE0239F69503 /* Pods_NewsApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +30,9 @@
 		80CE15E42989057500893A2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		80CE15E62989057500893A2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		80CE15EC298906C200893A2C /* NewsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewController.swift; sourceTree = "<group>"; };
+		80CE15EF29890CD500893A2C /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		80CE15F229890E8300893A2C /* ArticleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleTableViewCell.swift; sourceTree = "<group>"; };
+		80CE15F5298914A500893A2C /* URLRequest+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+Extensions.swift"; sourceTree = "<group>"; };
 		BA2D03AF815BBE0239F69503 /* Pods_NewsApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NewsApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -63,6 +69,9 @@
 		80CE15D72989057300893A2C /* NewsApp */ = {
 			isa = PBXGroup;
 			children = (
+				80CE15F42989148B00893A2C /* Extensions */,
+				80CE15F129890E7C00893A2C /* Cells */,
+				80CE15EE29890C7F00893A2C /* Models */,
 				80CE15D82989057300893A2C /* AppDelegate.swift */,
 				80CE15DA2989057300893A2C /* SceneDelegate.swift */,
 				80CE15DE2989057300893A2C /* Main.storyboard */,
@@ -72,6 +81,30 @@
 				80CE15EC298906C200893A2C /* NewsTableViewController.swift */,
 			);
 			path = NewsApp;
+			sourceTree = "<group>";
+		};
+		80CE15EE29890C7F00893A2C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				80CE15EF29890CD500893A2C /* Article.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		80CE15F129890E7C00893A2C /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				80CE15F229890E8300893A2C /* ArticleTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		80CE15F42989148B00893A2C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				80CE15F5298914A500893A2C /* URLRequest+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		CBD804825FE31EF0A3E9D952 /* Frameworks */ = {
@@ -88,7 +121,6 @@
 				452A85631BCBCF75CEE0FB99 /* Pods-NewsApp.debug.xcconfig */,
 				528F1CC44CBEA7A7AA3CAF88 /* Pods-NewsApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -207,7 +239,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80CE15F329890E8300893A2C /* ArticleTableViewCell.swift in Sources */,
+				80CE15F029890CD500893A2C /* Article.swift in Sources */,
 				80CE15D92989057300893A2C /* AppDelegate.swift in Sources */,
+				80CE15F6298914A500893A2C /* URLRequest+Extensions.swift in Sources */,
 				80CE15DB2989057300893A2C /* SceneDelegate.swift in Sources */,
 				80CE15ED298906C200893A2C /* NewsTableViewController.swift in Sources */,
 			);
